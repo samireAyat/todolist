@@ -47,7 +47,7 @@ main form input::placeholder {
     font-size: 18px;
 }
 
-main #add-btn {
+main #add-button {
     border: none;
     outline: none;
     width: 65px;
@@ -60,17 +60,17 @@ main #add-btn {
     cursor: pointer;
     transition: all 300ms linear;
 }
-main #add-btn:hover {
+main #add-button:hover {
     transform: scale(1.2);
 }
 
-main .tasks {
+main #tasks {
     width: 100%;
 
     margin-top: 30px;
 }
 
-main .tasks .task-item {
+main #tasks .task-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,7 +80,7 @@ main .tasks .task-item {
     margin-bottom: 10px;
 }
 
-main .tasks .task-item input[type="text"] {
+main #tasks .task-item input[type="text"] {
     border: none;
     outline: none;
     background-color: transparent;
@@ -91,13 +91,13 @@ main .tasks .task-item input[type="text"] {
     font-size: 18px;
 }
 
-main .tasks .task-item input[type="checkbox"] {
+main #tasks .task-item input[type="checkbox"] {
     outline: 2px solid;
     width: 18px;
     height: 18px;
 }
 
-main .tasks .task-item input[type="checkbox"]:checked {
+main #tasks .task-item input[type="checkbox"]:checked {
     accent-color: greenyellow;
 }
 
