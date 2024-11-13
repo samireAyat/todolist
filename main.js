@@ -9,10 +9,10 @@ function addButtonClickHandler() {
     }
 
     const taskInput = createTaskInput(addInput);
-    const taskChekbox = createTaskCheckbox(taskInput);
+    const taskCheckbox = createTaskCheckbox(taskInput);
     const closeButton = createCloseButton();
     const iconContainer = createIconContainer(taskInput, closeButton);
-    const taskItem = createTaskItem(taskChekbox, taskInput, iconContainer);
+    const taskItem = createTaskItem(taskCheckbox, taskInput, iconContainer);
 
     tasksSection.appendChild(taskItem);
 
@@ -21,12 +21,12 @@ function addButtonClickHandler() {
     addInput.value = "";
 }
 
-function createTaskItem(taskChekbox, taskInput, iconContainer) {
+function createTaskItem(taskCheckbox, taskInput, iconContainer) {
     const taskItem = document.createElement("div");
     taskItem.classList.add("task-item");
 
     taskItem.style.animation = "add-task 1s";
-    taskItem.appendChild(taskChekbox);
+    taskItem.appendChild(taskCheckbox);
     taskItem.appendChild(taskInput);
     taskItem.appendChild(iconContainer);
 
@@ -36,7 +36,7 @@ function createTaskItem(taskChekbox, taskInput, iconContainer) {
 function createTaskInput(addInput) {
     const taskInput = document.createElement("input");
     taskInput.type = "text";
-    taskInput.readOnly = "true";
+    taskInput.readOnly = true;
 
     taskInput.value = addInput.value;
 
@@ -44,18 +44,18 @@ function createTaskInput(addInput) {
 }
 
 function createTaskCheckbox(taskInput) {
-    const taskChekbox = document.createElement("input");
-    taskChekbox.type = "checkbox";
+    const taskCheckbox = document.createElement("input");
+    taskCheckbox.type = "checkbox";
 
-    taskChekbox.addEventListener("click", () => {
-        if (taskChekbox.checked == true) {
+    taskCheckbox.addEventListener("click", () => {
+        if (taskCheckbox.checked === true) {
             taskInput.classList.add("text-decoration");
         } else {
             taskInput.classList.remove("text-decoration");
         }
     });
 
-    return taskChekbox;
+    return taskCheckbox;
 }
 
 function createEditButton(taskInput) {
