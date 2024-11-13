@@ -49,9 +49,9 @@ function createTaskCheckbox(taskInput) {
 
     taskCheckbox.addEventListener("click", () => {
         if (taskCheckbox.checked === true) {
-            taskInput.classList.add("text-decoration");
+            taskInput.classList.add("striked");
         } else {
-            taskInput.classList.remove("text-decoration");
+            taskInput.classList.remove("striked");
         }
     });
 

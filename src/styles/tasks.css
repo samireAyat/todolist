@@ -35,6 +35,10 @@ main #tasks .task-item input[type="checkbox"]:checked {
     accent-color: greenyellow;
 }
 
+.striked {
+    text-decoration: line-through;
+}
+
 @keyframes add-task {
     from {
         opacity: 0;
