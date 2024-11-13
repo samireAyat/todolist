@@ -1,12 +1,11 @@
 form {
-    padding: 1.25rem 0.5rem;
+    padding-left: 1rem;
     background-color: #e9efec;
     margin-top: 1.25rem;
     border-radius: 2.5rem;
     display: flex;
     gap: 0.5rem;
     align-items: center;
-    position: relative;
 
     input {
         flex: 1;
@@ -27,8 +26,6 @@ form {
         border-radius: 50%;
         font-size: 30px;
         background-color: greenyellow;
-        position: absolute;
-        right: 0;
         cursor: pointer;
         transition: all 300ms linear;
 
