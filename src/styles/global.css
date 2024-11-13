@@ -25,7 +25,7 @@ optgroup {
 }
 
 body {
-    max-width: 800px;
+    max-width: 50rem;
 
     margin: auto;
 }
