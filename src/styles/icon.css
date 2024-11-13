@@ -1,0 +1,21 @@
+.icon {
+    font-size: 25px;
+    cursor: pointer;
+    color: black;
+    margin-right: 5px;
+    border-radius: 50%;
+    padding: 10px;
+    transition: all 300ms linear;
+}
+
+.icon:hover {
+    background-color: #cfd7d4;
+}
+
+button:has(.icon) {
+    padding: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    size: 15px;
+}

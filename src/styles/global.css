@@ -2,29 +2,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
     font-family: "Poppins", sans-serif;
 }
 
-i {
-    font-size: 25px;
-    cursor: pointer;
-    color: black;
-    margin-right: 5px;
-    border-radius: 50%;
-    padding: 10px;
-    transition: all 300ms linear;
-}
-
-.icon i:hover {
-    background-color: #cfd7d4;
-}
-
-.icon {
-    padding: 5px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    size: 15px;
+input,
+label,
+select,
+textarea,
+button,
+fieldset,
+legend,
+datalist,
+output,
+option,
+optgroup {
+    font-family: inherit;
 }
 
 .text-decoration {

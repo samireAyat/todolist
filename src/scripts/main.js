@@ -60,17 +60,16 @@ function createTaskCheckbox(taskInput) {
 
 function createEditButton(taskInput) {
     const editButton = document.createElement("button");
-    editButton.classList.add("icon");
-    editButton.innerHTML = `<i class="edit ri-edit-box-line"></i>`;
+    editButton.innerHTML = `<span class="icon edit ri-edit-box-line"></span>`;
 
     editButton.addEventListener("click", () => {
         taskInput.readOnly = !taskInput.readOnly;
 
         if (!taskInput.readOnly) {
-            editButton.innerHTML = `<i class="edit  ri-check-line"></i>`;
+            editButton.innerHTML = `<span class="icon edit  ri-check-line"></span>`;
             taskInput.style.backgroundColor = "white";
         } else {
-            editButton.innerHTML = `<i class="edit ri-edit-box-line"></i>`;
+            editButton.innerHTML = `<span class="icon edit ri-edit-box-line"></span>`;
             taskInput.style.backgroundColor = "transparent";
         }
     });
@@ -80,8 +79,7 @@ function createEditButton(taskInput) {
 
 function createCloseButton() {
     const closeButton = document.createElement("button");
-    closeButton.classList.add("icon");
-    closeButton.innerHTML = `<i class="close ri-close-line"></i>`;
+    closeButton.innerHTML = `<span class="icon close ri-close-line"></span>`;
 
     return closeButton;
 }
