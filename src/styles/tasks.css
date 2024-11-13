@@ -1,0 +1,47 @@
+main #tasks {
+    width: 100%;
+
+    margin-top: 30px;
+}
+
+main #tasks .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ebf1ef;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+main #tasks .task-item input[type="text"] {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    flex: 2;
+    padding: 5px;
+    border: 2px;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+main #tasks .task-item input[type="checkbox"] {
+    outline: 2px solid;
+    width: 18px;
+    height: 18px;
+}
+
+main #tasks .task-item input[type="checkbox"]:checked {
+    accent-color: greenyellow;
+}
+
+@keyframes add-task {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
