@@ -1,6 +1,6 @@
 const addInput = document.getElementById("add-input");
 const addBtn = document.getElementById("add-btn");
-const taskSection = document.querySelector(".task-section");
+const taskSection = document.querySelector(".tasks");
 
 let taskInput;
 function addTaskItem() {

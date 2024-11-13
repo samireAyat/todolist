@@ -19,19 +19,16 @@
         <script src="./main.js" defer></script>
     </head>
     <body>
-        <div class="todo-container">
+        <header>
             <h1>ToDo List</h1>
-            <form class="add-section">
+        </header>
+        <main>
+            <form>
                 <label for="add-input">Task:</label>
                 <input type="text" placeholder="Add your task" id="add-input" />
                 <button id="add-btn">+</button>
             </form>
-            <div class="task-section">
-                <!-- <div class="icon">
-                                <i class="ri-edit-box-line edit"></i>
-                                <i class="ri-close-line close"></i>
-                        </div> -->
-            </div>
-        </div>
+            <section class="tasks"></section>
+        </main>
     </body>
 </html>
