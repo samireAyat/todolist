@@ -1,4 +1,4 @@
-main form {
+form {
     padding: 1.25rem 0.5rem;
     background-color: #e9efec;
     margin-top: 1.25rem;
@@ -7,32 +7,33 @@ main form {
     gap: 0.5rem;
     align-items: center;
     position: relative;
-}
 
-form input {
-    flex: 1;
-    background-color: transparent;
-    border: none;
-    outline: none;
-}
+    input {
+        flex: 1;
+        background-color: transparent;
+        border: none;
+        outline: none;
 
-main form input::placeholder {
-    font-size: 18px;
-}
+        &::placeholder {
+            font-size: 18px;
+        }
+    }
 
-main #add-button {
-    border: none;
-    outline: none;
-    width: 65px;
-    height: 65px;
-    border-radius: 50%;
-    font-size: 30px;
-    background-color: greenyellow;
-    position: absolute;
-    right: 0;
-    cursor: pointer;
-    transition: all 300ms linear;
-}
-main #add-button:hover {
-    transform: scale(1.2);
+    #add-button {
+        border: none;
+        outline: none;
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        font-size: 30px;
+        background-color: greenyellow;
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+        transition: all 300ms linear;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
 }

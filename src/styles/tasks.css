@@ -1,42 +1,42 @@
-main #tasks {
+section#tasks {
     width: 100%;
 
     margin-top: 30px;
-}
 
-main #tasks .task-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ebf1ef;
-    padding: 20px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
+    .task-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ebf1ef;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 10px;
 
-main #tasks .task-item input[type="text"] {
-    border: none;
-    outline: none;
-    background-color: transparent;
-    flex: 2;
-    padding: 5px;
-    border: 2px;
-    margin-left: 10px;
-    font-size: 18px;
-}
+        input[type="checkbox"] {
+            outline: 2px solid;
+            width: 18px;
+            height: 18px;
 
-main #tasks .task-item input[type="checkbox"] {
-    outline: 2px solid;
-    width: 18px;
-    height: 18px;
-}
+            &:checked {
+                accent-color: greenyellow;
 
-main #tasks .task-item input[type="checkbox"]:checked {
-    accent-color: greenyellow;
-}
+                + input[type="text"] {
+                    text-decoration: line-through;
+                }
+            }
+        }
 
-.striked {
-    text-decoration: line-through;
+        input[type="text"] {
+            border: none;
+            outline: none;
+            background-color: transparent;
+            flex: 2;
+            padding: 5px;
+            border: 2px;
+            margin-left: 10px;
+            font-size: 18px;
+        }
+    }
 }
 
 @keyframes add-task {

@@ -9,7 +9,7 @@ function addButtonClickHandler() {
     }
 
     const taskInput = createTaskInput(addInput);
-    const taskCheckbox = createTaskCheckbox(taskInput);
+    const taskCheckbox = createTaskCheckbox();
     const closeButton = createCloseButton();
     const iconContainer = createIconContainer(taskInput, closeButton);
     const taskItem = createTaskItem(taskCheckbox, taskInput, iconContainer);
@@ -43,17 +43,9 @@ function createTaskInput(addInput) {
     return taskInput;
 }
 
-function createTaskCheckbox(taskInput) {
+function createTaskCheckbox() {
     const taskCheckbox = document.createElement("input");
     taskCheckbox.type = "checkbox";
-
-    taskCheckbox.addEventListener("click", () => {
-        if (taskCheckbox.checked === true) {
-            taskInput.classList.add("striked");
-        } else {
-            taskInput.classList.remove("striked");
-        }
-    });
 
     return taskCheckbox;
 }
